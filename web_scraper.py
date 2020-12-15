@@ -53,7 +53,7 @@ for page in pages:
 
 		# Extraer el año de lanzamiento, se encuentra dentro de un <span> debajo de <a> del título, pero como ese <span>
 		# se encuentra de segundo, aquí toca buscar la etiqueta <span> que tenga la clase "lister-item-year" de primerazo
-		# <span class="class="lister-item-year ...">
+		# <span class="lister-item-year ...">
 		year = container.h3.find('span', class_='lister-item-year').text
 		years.append(year)
 		
